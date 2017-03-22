@@ -1,0 +1,343 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: #ecf0f1;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(43, 43, 45,0.8);
+}
+
+header .icon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 8px 0 8px 40px;
+}
+header .icon img{
+  width: 76px;
+}
+header .icon h1{
+  font-size: 50px;
+  font-weight: bolder;
+  margin: 0;
+  color: #ecf0f1;
+}
+header .icon a{
+  text-decoration: none;
+  color: #ecf0f1;
+}
+header .icon a:active{
+  color: white;
+}
+
+header nav a{
+  color: #ecf0f1;
+  text-decoration: none;
+  margin: 0 40px 0 0;
+  font-size: 24px;
+}
+header nav a:hover{
+  color: white;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section .image{
+  max-width: 100%;
+  background: url(images/2.jpg) no-repeat center center fixed;
+  background-size: cover;
+  padding-top: 1px;
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  justify-content: flex-end;
+}
+
+section .text{
+  margin-right: 14vw;
+}
+section .text h3{
+  color: #ecf0f1;
+  font-size: 64px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+section .text p{
+  color: #ecf0f1;
+  font-size: 32px;
+  margin: -60px 0 20px 10px;
+  font-weight: lighter;
+}
+section .text button{
+  color: #ecf0f1;
+  font-size: 28px;
+  margin-left: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  outline: none;
+  cursor: pointer;
+}
+section .text button:hover,
+section .text button:active{
+  color: white;
+}
+
+section .articles{
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  margin-top: 20px;
+}
+
+section .articles .article{
+  background-size: cover;
+  width: 30vw;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .articles .article:nth-child(1){
+    background: url(images/1.jpg) no-repeat center center fixed;
+}
+section .articles .article:nth-child(2){
+    background: url(images/3.jpg) no-repeat center center fixed;
+}
+section .articles .article:nth-child(3){
+    background: url(images/4.jpg) no-repeat center center fixed;
+}
+section .articles .article h2{
+  color: #ecf0f1;
+  font-size: 60px;
+  font-weight: lighter;
+}
+
+footer{
+  text-align: center;
+
+  padding: 1px;
+}
+
+
+/*
+* REGISTER
+*/
+
+.register{
+  max-width: 100%;
+  background: url(images/2.jpg) no-repeat center center fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+.register form{
+  display: flex;
+  flex-direction: column;
+}
+.register form input{
+  margin: 20px;
+  box-shadow: 0 4px 4px rgba(43, 43, 45,0.4);
+}
+.register form input[type="text"],
+.register form input[type="password"]{
+  width: 40vw;
+  box-sizing: border-box;
+  height: 6vh;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ecf0f1;;
+  font-size: 28px;
+  color: #ecf0f1;
+  padding: 12px;
+}
+.register form input[type="submit"]{
+  box-sizing: border-box;
+
+  outline: none;
+  background-color: #FAE042;
+  border: none;
+  font-size: 28px;
+  color: rgba(43, 43, 45,0.8);
+  cursor: pointer;
+}
+
+/*
+* LOGIN
+*/
+
+.login{
+  max-width: 100%;
+  background: url(images/2.jpg) no-repeat center center fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+.login form{
+  display: flex;
+  flex-direction: column;
+}
+.login form input{
+  margin: 20px;
+  box-shadow: 0 4px 4px rgba(43, 43, 45,0.4);
+}
+.login form input[type="text"],
+.login form input[type="password"]{
+  width: 40vw;
+  box-sizing: border-box;
+  height: 6vh;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ecf0f1;;
+  font-size: 28px;
+  color: #ecf0f1;
+  padding: 12px;
+
+}
+.login form input[type="submit"]{
+  box-sizing: border-box;
+  outline: none;
+  background-color: #FAE042;
+  border: none;
+  font-size: 28px;
+  color: rgba(43, 43, 45,0.8);
+  cursor: pointer;
+}
+
+/*
+* PRODUCTS
+*/
+
+.products{
+  max-width: 100%;
+  background: url(images/2.jpg) no-repeat center center fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.products div{
+  display: flex;
+  width: 80vw;
+
+}
+.products div h2{
+  color: white;
+  font-size: 40px;
+  border-right: 2px solid white;
+  padding-right: 10px;
+}
+.products div p{
+  color: white;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+/*
+* ABOUT
+*/
+
+.about{
+  max-width: 100%;
+  background: url(images/2.jpg) no-repeat center center fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.about img{
+  margin-top: 10px;
+  width: 40vw;
+}
+.about p{
+  color: white;
+  text-indent: 20px;
+  margin: 40px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.message p{
+  font-size: 30px;
+  color: white;
+  margin: 0;
+}
+
+.user{
+  color: orangered;
+}
+.user:first-child{
+  color: rgb(139,0,0);
+}
+
+@media screen and (max-width: 780px){
+  header{
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+  section .articles{
+    width: 90vw;
+    flex-direction: column;
+  }
+  section .articles .article{
+    width: 90vw;
+    margin-top: 20px;
+  }
+  input{
+    width: 80vw;
+  }
+  .login form input[type="text"],
+  .register form input[type="text"],
+  .login form input[type="password"],
+  .register form input[type="password"]{
+    width: 80vw;
+  }
+  .about{
+    height: auto;
+  }
+  .about img{
+    width: 90vw;
+  }
+  .products{
+    height: auto;
+  }
+  .products div{
+    flex-direction: column;
+    border: none;
+  }
+  .products div h2{
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid white;
+  }
+  .products div p{
+    margin-top: -20px;
+    text-align: justify;
+  }
+}
+@media screen and (min-width:230px) and (max-width:590px){
+  header nav a{
+    display: block;
+    padding: 10px;
+  }
+}

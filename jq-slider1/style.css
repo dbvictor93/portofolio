@@ -1,0 +1,55 @@
+body{
+  background-color: grey;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+a{
+  text-decoration: none;
+  font-size: 40px;
+}
+img{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 100vh;
+}
+li{
+  list-style: none;
+  display: inline-block;
+}
+.pagination ul{
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-60%, -20%);
+}
+.pagination ul li a{
+  display: block;
+  margin: 10px;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+.pagination ul li a:active{
+  color: rgba(255, 255, 255, 0.2);
+}
+.navigation{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.navigation ul li a i{
+  font-size: 200px;
+  color: rgba(255, 255, 255, 0.1);
+}
+.navigation ul li a i:active{
+  color: rgba(255, 255, 255, 0.2);
+}

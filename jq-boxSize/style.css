@@ -1,0 +1,40 @@
+body{
+  background: #2E2E2E;
+}
+#box{
+  background-color: #1D9E74;
+  border-radius: 100%;
+
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate( -50%, -30% );
+}
+
+#size{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate( -50%, -10% );
+}
+#size ul{
+  background-color: #198B67;
+  display: flex;
+  padding-left: 0px;
+
+}
+
+#size ul li{
+  display: flex;
+}
+#size ul li a{
+  font-size: 40px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#size input{
+  width: 300px;
+  font-size: 2em;
+}

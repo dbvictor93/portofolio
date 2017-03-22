@@ -1,0 +1,84 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #E3F2FD;
+  font-family: 'Indie Flower', cursive;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width:100%;
+  overflow: hidden;
+
+}
+/*header img{
+  width: 100vw;
+  height: 200px;
+  overflow: hidden;
+}*/
+header div{
+  background-image: url('images/1.jpg');
+  width: 100vw;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+
+
+}
+header h1{
+  font-size: 300%;
+  margin-top: -22px;
+  margin-bottom: -20px;
+  color: grey;
+}
+
+
+
+section{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  max-width: 100%;
+}
+section div{
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  margin: 4px;
+}
+section div:hover{
+  background-color: rgba(241, 241, 241,0.9);
+}
+section div img{
+  width: 20vw;
+  height: auto;
+  cursor: pointer;
+}
+section div p{
+  padding: 10px;
+}
+
+footer{
+  text-align: center;
+  font-size: 16px;
+}
+
+@media screen and (min-width:230px) and (max-width:900px){
+  header h3{
+    text-align: center;
+  }
+  section{
+    flex-direction: column;
+    width: 90vw;
+  }
+  section div{
+    width: 80vw;
+    align-items: center;
+    margin: 0 auto;
+  }
+  section div img{
+    width: 76vw;
+  }
+}

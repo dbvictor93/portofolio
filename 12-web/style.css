@@ -1,0 +1,259 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(235, 74, 54);
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(44, 62, 81);
+  height: 10vh;
+  min-height: 60px;
+}
+
+header h1{
+  margin: 0 0 0 60px;
+  font-weight: lighter;
+  color: rgb(254, 253, 250);
+  font-size: 32px;
+}
+header h1 a{
+  text-decoration: none;
+  color: rgb(254, 253, 250);
+}
+header nav a{
+  padding: 0 60px 0 0;
+  text-decoration: none;
+  font-size: 24px;
+  color: rgb(254, 253, 250);
+}
+
+section{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+section .image{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 20px;
+  box-shadow: 0 1px 8px black;
+}
+section .image img{
+  display: inline;
+  margin: 0 auto;
+  width: 500px;
+}
+section p{
+  color: rgb(254, 253, 250);
+  font-size: 40px;
+}
+
+.portofolio{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.portofolio .block{
+  margin-top: 20px;
+  width: 30vw;
+  height: auto;
+  background-color: rgb(44, 62, 81);
+}
+ .block img{
+  width: 28vw;
+  margin: 1vw 1vw;
+}
+.block p{
+  text-align: center;
+}
+
+.data{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+}
+
+section .data form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+
+}
+section .data form h1{
+  color: rgb(254, 253, 250);
+  font-size: 32px;
+}
+section .data form input{
+    width: 40vw;
+    height: 6vh;
+    font-size: 30px;
+    background-color: rgb(44, 62, 81);
+    color: rgb(254, 253, 250);
+    border: none;
+    margin-top: 20px;
+    padding-left: 10px;
+    border: 1px solid rgba(254, 253, 250, 0.1);
+}
+section .data form textarea{
+    max-width: 40vw;
+    width: 40vw;
+    max-height: 24vh;
+    height: 14vh;
+    font-size: 30px;
+    background-color: rgb(44, 62, 81);
+    color: rgb(254, 253, 250);
+    border: none;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+section .data form button{
+  border: none;
+  background-color: rgb(44, 62, 81);
+  color: rgb(254, 253, 250);
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 10px;
+  height: 40px;
+  border: 2px solid rgba(254, 253, 250, 0.1);
+}
+section .data .tel{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+section .data .tel h3{
+  color: rgb(254, 253, 250);
+  margin-bottom: -10px;
+  font-size: 30px;
+}
+
+.about{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about img{
+  width: 400px;
+  margin: 20px 20px;
+}
+.about p{
+  padding-top: 40px;
+  margin: 10px;
+}
+.about p span{
+  color: rgb(44, 62, 81);
+}
+
+@media screen and (min-width:299px) and (max-width:795px){
+
+  header{
+    flex-direction: column;
+    height: auto;
+  }
+  header h1{
+    margin: 0;
+  }
+
+  header nav{
+    display: flex;
+    flex-direction: column;
+  }
+  header nav a{
+    padding: 0;
+    margin-top: 14px;
+  }
+  section .image{
+    border-radius: 0px;
+    width: 90vw;
+    height: 50vh;
+    box-shadow: 0 0 0 black;
+  }
+
+  section p{
+    font-size: 34px;
+  }
+  .portofolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .portofolio .block{
+    width: 90vw;
+    height: auto;
+  }
+  .portofolio .block:last-child{
+    margin-bottom: 20px;
+  }
+   .block img{
+    width: 80vw;
+    position: relative;
+    margin: 1vh 5vw;
+
+  }
+  .block p{
+    margin: 0;
+    font-size: 30px;
+  }
+
+  .about{
+    flex-direction: column;
+    width: 90vw;
+  }
+  .about img{
+    width: 80vw;
+    margin-left: 10vw;
+  }
+  .about p{
+    font-size: 20px;
+    margin-left: 10vw;
+    padding-top: 1px;
+  }
+
+  .data{
+    flex-direction: column;
+    width: 90vw;
+  }
+  section .data form{
+    width: 80vw;
+  }
+  section .data form h1{
+    color: rgb(254, 253, 250);
+    font-size: 32px;
+  }
+  section .data form input{
+      width: 80vw;
+      font-size: 24px;
+  }
+  section .data form textarea{
+      max-width: 80vw;
+      width: 80vw;
+      max-height: 50vh;
+      height: 20vh;
+      font-size: 24px;
+  }
+  section .data .tel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section .data .tel h3{
+    color: rgb(254, 253, 250);
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+}

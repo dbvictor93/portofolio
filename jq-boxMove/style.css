@@ -1,0 +1,36 @@
+body{
+  background-color: 	#CD5C5C;
+}
+
+#object{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 2px solid #CD5C5C;
+  border-radius: 100%;
+  -webkit-filter: drop-shadow(0px 0px 4px white);
+}
+
+#navigation {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation-top{
+  display: flex;
+}
+.navigation-bottom{
+  display: flex;
+}
+
+div a{
+  font-size: 80px;
+  display: block;
+  padding: 20px;
+  -webkit-filter: drop-shadow(0px 0px 2px black);
+}

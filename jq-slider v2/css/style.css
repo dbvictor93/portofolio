@@ -1,0 +1,22 @@
+#slider-wrapper{
+  border: 5px solid red;
+  overflow: hidden;
+}
+
+.prev, .next{
+  font-size: 4em;
+
+  position: absolute;
+  color: darkred;
+  z-index: 1;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.next{
+  margin-left: 360px;
+}
+.prev{
+  margin-left: -360px;
+}

@@ -1,0 +1,16 @@
+.container{
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+
+}
+
+.section{
+  width: 100vw;
+  height: 100vh;
+}
+
+#database{
+  margin-top: 10px;
+}

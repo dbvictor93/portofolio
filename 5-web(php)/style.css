@@ -1,0 +1,128 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Oxygen', sans-serif;
+  background-color: #00769C;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1{
+  font-size: 50px;
+  margin: 4px 0 4px 40px;
+  color: white;
+}
+
+
+header nav a{
+  margin-right: 40px;
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+}
+header nav a:hover{
+  color: white;
+}
+
+section{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+section aside{
+  display: flex;
+  flex-direction: column;
+
+}
+section aside h3{
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  margin-bottom: -4px;
+  border-bottom: 2px solid white;
+  margin: 0 auto;
+  padding-bottom: 4px;
+  width: 110px;
+}
+section aside form{
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section aside form input{
+  width: 18vw;
+  height: 28px;
+  margin-top: 10px;
+  outline: none;
+  font-size: 24px;
+  padding: 4px;
+  border-radius: 2px;
+}
+section aside form button{
+  width: 120px;
+  height: 32px;
+  font-size: 24px;
+  margin-top: 10px;
+  opacity: 0.6;
+  border: none;
+}
+
+section div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section div .background{
+  background-image: url('images/1.jpg');
+  width: 70vw;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 2px 4px black;
+}
+
+section div .articles{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+
+}
+section div .articles h3{
+  text-indent: 20px;
+  margin-left: 20px;
+}
+@media screen and (min-width:230px) and (max-width:1100px){
+  section{
+    flex-direction: column;
+    align-items: center;
+  }
+  section aside{
+      align-items: center;
+  }
+  section aside form{
+    width: 70vw;
+  }
+  section aside form input{
+    width: 50vw;
+  }
+}
+@media screen and (min-width:230px) and (max-width:450px){
+  header{
+    flex-direction: column;
+  }
+  header h1{
+    margin: 0;
+  }
+  header nav a{
+    margin: 10px;
+    padding: 0;
+  }
+  section aside form input{
+    width: 70vw;
+  }
+}

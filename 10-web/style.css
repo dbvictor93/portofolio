@@ -1,0 +1,367 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(194, 221, 230, 0.4);
+  width: 97vw;
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+}
+
+/*
+* ASIDE
+*/
+aside{
+  display: flex;
+  flex-direction: column;
+  width: 16vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+aside header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+  border-bottom: 1px solid rgb(194, 221, 230);
+}
+aside header h1{
+  color: rgb(194, 221, 230);
+  text-transform: uppercase;
+  margin-top: -4px;
+  font-size: 40px;
+}
+aside nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+aside nav .option{
+  text-align: left;
+  margin: 4px;
+  border-bottom: 1px solid rgb(194, 221, 230);
+}
+aside nav .option a{
+  text-decoration: none;
+  color: rgb(48, 35, 29);
+  font-size: 26px;
+}
+aside nav .option a:hover{
+
+  color: rgba(48, 35, 29, 0.5);
+}
+aside nav .option p{
+  margin-top: -4px;
+  color: rgb(194, 221, 230);
+}
+aside .social{
+  display: flex;
+  flex-direction: row;
+}
+aside .social a{
+  text-align: center;
+  color: #293945;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 2vw;
+}
+aside .social a:hover{
+  color: white;
+}
+
+/*
+*SECTION
+*/
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 16vw;
+  max-width: 84%;
+  width: 84vw;
+
+}
+section .main_image{
+  background: url(images/main.jpg) no-repeat center center fixed;
+  background-size: cover;
+  max-width: 100%;
+  width: 84vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: white;
+}
+section .main_image .main_image_text{
+  margin: 30vh 8vw;
+}
+section .main_image .main_image_text h1{
+  font-size: 40px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+section .main_image .main_image_text p{
+  margin-top: -24px;
+}
+
+section .icons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section .icons h2{
+  color: rgb(48, 35, 29);
+}
+section .icons .square{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+section .icons .square .article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25vw;
+  background-color: #6786A1;
+  margin: 8px;
+  padding: 6px;
+  box-shadow: 0 1px 2px black;
+}
+section .icons .square .article img{
+  width: 6vw;
+}
+section .icons .square .article h3{
+  color: white;
+}
+section .icons .square .article p{
+  margin-top: -14px;
+}
+
+section .blocks{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+section .blocks .left{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  width: 82vw;
+  background-color: #6786A1;
+}
+section .blocks .left img{
+  width: 42vw;
+}
+section .blocks .left .blocks_text{
+  text-align: left;
+  width: 42vw;
+  padding-left: 2vw;
+  color: white;
+}
+section .blocks .left .blocks_text h3{
+  font-size: 34px;
+  font-weight: lighter;
+}
+section .blocks .left .blocks_text p{
+  margin-top: -24px;
+}
+
+section .blocks .right{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  width: 82vw;
+  background-color: #6786A1;
+}
+
+section .blocks .right img{
+  width: 42vw;
+}
+section .blocks .right .blocks_text{
+  text-align: right;
+  width: 42vw;
+  padding-right: 2vw;
+  color: white;
+}
+section .blocks .right .blocks_text h3{
+  font-size: 34px;
+  font-weight: lighter;
+}
+section .blocks .right .blocks_text p{
+  margin-top: -24px;
+}
+
+section .about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+section .about h2{
+  align-items: center;
+}
+section .about .two_column{
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+  width: 84vw;
+}
+section .about .two_column div h3{
+    border-bottom: 2px solid #6786A1;
+}
+section .about .two_column div ul li{
+   list-style: none;
+}
+section .about .two_column div ul li:before{
+  content: '';
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size:contain;
+  background-image: url(images/check.png);
+}
+section .about .two_column div ul li span{
+   padding-left: 20px;
+}
+
+section .contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+    width: 84vw;
+
+  background-color: #3A4D5C
+}
+section .contact h3{
+  color: white;
+}
+section .contact>p{
+  color: white;
+  margin-top: -10px;
+  width: 42vw;
+  text-align: center;
+
+}
+section .contact form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+section .contact form input,textarea{
+  width: 42vw;
+  padding: 8px;
+  font-size: 20px;
+  margin: 4px;
+  border: none;
+  background-color: #293945;
+  color: white;
+}
+section .contact form button{
+  width: 10vw;
+  height: 5vh;
+  color: black;
+  margin-top: 10px;
+  background-color: #293945;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+section .numbers{
+  background-color: #6786A1;
+  width: 84vw;
+  max-width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+
+}
+section .numbers div{
+  width: 20vw;
+}
+section .numbers div h3{
+  font-size: 24px;
+}
+section .numbers div p{
+  margin-top: -20px;
+  color: white;
+}
+
+footer{
+  text-align: center;
+  padding: 1px;
+  background-color: rgba(194, 221, 230, 0.4);
+  max-width: 100%;
+  width: 100vw;
+}
+@media screen and (min-width:230px) and (max-width:950px){
+  aside{
+    display: none;
+  }
+  section{
+    max-width: 100%;
+    width: 100vw;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+  }
+  section .icons{
+    width: 80vw;
+  }
+  section .icons .square{
+    flex-direction: column;
+    width: 80vw;
+  }
+  section .icons .square .article{
+    width: 80vw;
+  }
+  section .blocks .left{
+    flex-direction: column;
+    width: 80vw;
+  }
+  section .blocks .left img{
+    width: 80vw;
+  }
+  section .blocks .left .blocks_text{
+    width: 80vw;
+    text-align: center;
+  }
+  section .blocks .right{
+    flex-direction: column-reverse;
+    width: 80vw;
+  }
+  section .blocks .right img{
+    width: 80vw;
+  }
+  section .blocks .right .blocks_text{
+    width: 80vw;
+    text-align: center;
+  }
+  .two_column{
+    flex-direction: column;
+  }
+  section .numbers{
+    flex-direction: column;
+    align-items: center;
+  }
+  section .numbers div{
+    width: 80vw;
+  }
+}

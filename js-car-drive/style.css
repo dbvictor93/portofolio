@@ -1,0 +1,12 @@
+body{
+  margin: 40px;
+  padding: 0;
+  overflow: scroll;
+}
+
+svg{
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: auto;
+}

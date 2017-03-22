@@ -1,0 +1,47 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3-web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+  </head>
+  <body>
+
+  <header>
+    <h1>Hello</h1>
+    <nav>
+      <a href="index.html">home</a>
+      <a href="blog.php">blog</a>
+    </nav>
+  </header>
+
+  <section>
+    <div>
+      <button onclick="remove()">X</button>
+    </div>
+
+    <div>
+      <h2>Write something</h2>
+      <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <input name="title" type="text" placeholder="title" autofocus required>
+        <input name="file" type="file" required>
+        <textarea name="content" required></textarea>
+        <button type="submit">Post it!</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>(c) Victor C.</p>
+  </footer>
+
+  <script>
+    function remove(){
+      document.querySelector('section').style.display = "none";
+    }
+  </script>
+  </body>
+  </html>

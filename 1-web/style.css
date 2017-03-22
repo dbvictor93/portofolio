@@ -1,0 +1,98 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5DC;
+  font-family: 'Dosis', sans-serif;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  width: 97vw;
+  height: auto;
+}
+
+header>h2{
+  margin: 0;
+  font-size: 40px;
+  margin-top: -10px;
+}
+header a{
+  margin: 0;
+  font-size: 28px;
+  margin: 8px;
+  color: orangered;
+  outline: none;
+  text-decoration: none;
+}
+header a:hover{
+  color: white;
+}
+
+section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100vw;
+}
+section div{
+  width: 400px;
+  margin-top: 20px;
+  background-color: #F5F5DA;
+}
+section div:hover{
+  background-color: #fff;
+}
+section div img{
+  width: 400px;
+  height:auto;
+}
+section div h4{
+  font-size: 20px;
+  font-weight: lighter;
+  text-indent: 12px;
+  text-align: justify;
+  padding: 2px;
+}
+
+footer{
+  position: fixed;
+  bottom: 1px;
+  width: 100vw;
+  text-align: center;
+  font-size: 16px;
+  line-height: 0;
+}
+
+@media screen and (min-width:230px) and (max-width:1284px){
+  section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section div{
+    width: 80vw;
+  }
+  section div img{
+    width: 80vw;
+  }
+
+}
+@media screen and (min-width:230px) and (max-width:550px){
+  header{
+    flex-direction: column;
+    margin: 0;
+  }
+  header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav a{
+    margin: 0;
+  }
+}

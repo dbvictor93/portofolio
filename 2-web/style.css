@@ -1,0 +1,120 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Serif', serif;
+  background-color: #C1E1A6;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+}
+nav a{
+    padding: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: rgb(64, 163, 114);
+}
+nav a:hover{
+    background-color: rgba(64, 163, 114,0.3);
+    border-radius: 4px;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  background-color: rgba(64, 163, 114,0.4);
+}
+header h1{
+  width: 100vw;
+  vertical-align: middle;
+  margin: auto;
+  margin-left: 20px;
+  font-size: 80px;
+}
+header div{
+  width: 80vw;
+  text-align: justify;
+  margin-right: 40px;
+}
+header div h3{
+  text-align: center;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+section{
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  background-color: rgba(180, 187, 121, 0.2);
+}
+section div{
+  width: 55vw;
+}
+section div h3{
+  vertical-align: middle;
+  margin: auto;
+  margin-left: 20px;
+  font-size: 48px;
+  text-transform: uppercase;
+
+}
+section div p{
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+  text-indent: 20px;
+}
+
+
+section aside{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45vw;
+}
+
+section aside img{
+  width: 40vw;
+  margin-top: 20px;
+  box-shadow: 0 2px 2px black;
+}
+
+footer{
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media screen and (min-width:230px) and (max-width:650px){
+  nav{
+    flex-direction: column;
+    align-items: center;
+  }
+  header{
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  header div{
+    margin-right: 0;
+  }
+  header h1{
+    text-align: center;
+    margin-left: 0;
+  }
+  section{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  section aside img{
+    width: 80vw;
+  }
+  section div{
+    width: 80vw;
+  }
+}

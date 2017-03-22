@@ -1,0 +1,191 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: url(images/image1.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+header h1{
+  color: white;
+  font-size: 60px;
+}
+header nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+header nav a:hover{
+    background-color: rgba(232, 232, 232,0.4);
+}
+
+section{
+  width: 40vw;
+  height: auto;
+  background-color: rgba(232, 232, 232,0.4);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  box-shadow: 0 1px 2px black;
+}
+section div:first-child{
+    margin: 4px 4px 0 auto;
+}
+section div>button{
+  width: 40px;
+  height: 40px;
+  background-color:transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+section div>button:hover{
+  background-color: rgba(232, 232, 232,0.4);
+}
+
+section div h2{
+  font-size: 30px;
+  text-align: center;
+  margin-top: -6px;
+}
+section div form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section div form input:first-child{
+  box-sizing: border-box;
+    width: 70%;
+    height: 40px;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 4px;
+}
+section div form input[type="file"]{
+  box-sizing: border-box;
+    width: 70%;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+section div form textarea{
+  max-width: 70%;
+  max-height: 40vh;
+  width: 70%;
+  height: 20vh;
+  box-sizing: border-box;
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 4px;
+}
+section div form button{
+  width: 20%;
+  height: 30px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  cursor: pointer;
+
+  background-color: rgba(232, 232, 232,0.4);
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: white;
+}
+section div form button:hover{
+  background-color: rgba(232, 232, 232,0.6);
+}
+
+footer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+/*///////////////  B L O G  /////////////////////////*/
+
+.blog{
+  width: 60vw;
+  height: auto;
+  background-color: rgba(232, 232, 232,0.4);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 1px 2px black;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+.blog img{
+  width: 50%;
+  box-shadow: 0 1px 2px black;
+}
+
+.blog p{
+  text-align: justify;
+  text-indent: 20px;
+  padding: 0 20px 0 20px;
+}
+
+.footer{
+  text-align: center;
+  position: relative;
+}
+
+@media screen and (min-width:442px) and (max-width:966px){
+  section div form button{
+    width: 80px;
+  }
+  section{
+    width: 80vw;
+  }
+  .blog{
+    width: 80vw;
+  }
+  .blog img{
+    width: 72vw;
+  }
+}
+@media screen and (min-width:230px) and (max-width:441px){
+  section div form button{
+    width: 80px;
+  }
+  section{
+    width: 80vw;
+  }
+  header h1{
+    margin-bottom: 10px;
+  }
+  header{
+    flex-direction: column;
+  }
+  header nav a{
+    margin-top: -20px;
+  }
+  .blog{
+    width: 90vw;
+  }
+  .blog img{
+    width: 80vw;
+  }
+}

@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteRule ^index? index.php
+RewriteRule ^place/([0-9a-zA-Z]+)? place.php
